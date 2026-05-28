@@ -21,7 +21,6 @@ export abstract class BasePage{
         await locator.fill(value);
     }
 
-
     async verifyURLContains(text: string) : Promise <void> {
         await expect(this.page).toHaveURL(new RegExp(text));
     }
